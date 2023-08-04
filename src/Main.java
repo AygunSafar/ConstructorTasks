@@ -1,3 +1,4 @@
+import bank.BankAccount;
 import bookDetails.Book;
 import vehicles.Car;
 import vehicles.Vehicle;
@@ -13,6 +14,12 @@ public class Main {
 
         Vehicle v= new Car("Mercedes",2006,4);
         v.displayDetails();
+
+        BankAccount bankAccount=new BankAccount("1232","Test");
+        bankAccount.depositMoney(45);
+        bankAccount.withdrawMoney(500);
+        System.out.println(bankAccount);
+
 
 
     }
